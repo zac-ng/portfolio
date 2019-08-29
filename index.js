@@ -5,11 +5,8 @@ var http = require('http').Server(app);
 
 // -------------- serve static folders -------------- //
 
-app.use('/html', express.static(path.join(__dirname, 'html')))
-app.use('/js', express.static(path.join(__dirname, 'js')))
-app.use('/css', express.static(path.join(__dirname, 'css')))
-app.use('/data/uploaded_files', express.static(path.join(__dirname, '/data/uploaded_files')))
-app.use('/images/icon', express.static(path.join(__dirname, 'images/icon')))
+app.use('/html', express.static(path.join(__dirname, 'html')));
+app.use('/js', express.static(path.join(__dirname, 'js')));
 app.use(express.json())
   
 // -------------- middleware functions -------------- //
