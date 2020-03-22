@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+  }
+  
+  html, body, section {
+    min-height: 100%;
+    text-align: center;
+  }
+  
+  section {
+    padding: 10% 0;
+  }
+  section.light {
+    background-color: #7887a5;
+  }
+  section.brand {
+    background-color: #0e141f;
+    color: #fff;
+  }
+  section.brand a {
+    color: #fff;
+    text-decoration: none;
+  }
+  section h1 {
+    display: block;
+    padding: 0;
+    marging-bottom: 1.5em;
+  }
+  section p {
+    font-size: 1.2em;
+    font-weight: 100;
+    margin: 0 32px 32px 32px;
+  }
+  section p a {
+    color: #fff;
+    text-decoration: none;
+  }
+  section .tile {
+    display: inline-block;
+    background-color: #7887a5;
+    width: 64px;
+    height: 64px;
+  }
+  section .fullscreen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
+  }

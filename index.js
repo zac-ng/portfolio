@@ -14,6 +14,10 @@ app.get('/', function(req,res) {
     res.sendFile(__dirname + "/html/home.html");
 })
 
+app.get('/', function(req,res) {
+    res.sendFile(__dirname + "/html/test.html");
+})
+
 
 
 http.listen(process.env.PORT, process.env.IP);
