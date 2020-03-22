@@ -7,6 +7,7 @@ var http = require('http').Server(app);
 
 app.use('/html', express.static(path.join(__dirname, 'html')));
 app.use('/js', express.static(path.join(__dirname, 'js')));
+app.use('/css', express.static(path.join(__dirname, 'css')));
 app.use(express.json())
 
 app.get('/', function(req,res) {
