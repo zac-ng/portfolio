@@ -10,7 +10,7 @@ app.use('/js', express.static(path.join(__dirname, 'js')));
 app.use(express.json())
 
 app.get('/', function(req,res) {
-    //res.sendFile(__dirname + "/html/home.html");
+    res.sendFile(__dirname + "/html/home.html");
 })
 
 
