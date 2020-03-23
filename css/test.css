@@ -1,50 +1,37 @@
-html, body {
-    height: 100%;
-    min-height: 100%;
+/* set colors*/
+:root {
+    --color-1: forestgreen;
+    --color-2: lightskyblue;
+    --color-3: darksalmon;
+    --color-4: palegoldenrod;
+    --color-5: mediumvioletred;
   }
   
-  html, body, section {
-    min-height: 100%;
-    text-align: center;
+  .foo {
+    min-height: 33vh;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
   }
   
-  section {
-    padding: 10% 0;
+  /* apply colors */
+  .foo-1 {
+    background-color: var(--color-1);
   }
-  section.light {
-    background-color: #7887a5;
+  
+  .foo-2 {
+    background-color: var(--color-2);
   }
-  section.brand {
-    background-color: #0e141f;
-    color: #fff;
+  
+  .foo-3 {
+    background-color: var(--color-3);
   }
-  section.brand a {
-    color: #fff;
-    text-decoration: none;
+  
+  .foo-4 {
+    background-color: var(--color-4);  
   }
-  section h1 {
-    display: block;
-    padding: 0;
-    marging-bottom: 1.5em;
-  }
-  section p {
-    font-size: 1.2em;
-    font-weight: 100;
-    margin: 0 32px 32px 32px;
-  }
-  section p a {
-    color: #fff;
-    text-decoration: none;
-  }
-  section .tile {
-    display: inline-block;
-    background-color: #7887a5;
-    width: 64px;
-    height: 64px;
-  }
-  section .fullscreen {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 16px;
+  
+  .foo-5 {
+    background-color: var(--color-5);
   }

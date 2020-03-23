@@ -1,6 +1,23 @@
-ScrollReveal().reveal('.headline1');
-ScrollReveal().reveal('.headline2', { delay: 200, reset: true, desktop: true });
-ScrollReveal().reveal('.headline3', { delay: 400, reset: true, desktop: true });
-ScrollReveal().reveal('.headline4', { delay: 600, reset: true, desktop: true, opacity: 0.1 });
-ScrollReveal().reveal('.headline4text', { delay: 600, reset: true, desktop: true, opacity: 0.05, duration: 2000 });
-ScrollReveal().reveal('.tile', { interval: 16, reset: true, desktop: true });
+// GENERAL SETTING
+window.sr = ScrollReveal({ reset: true });
+
+// Custom Settings
+sr.reveal('.foo-1', { duration: 200 });
+
+sr.reveal('.foo-2', { 
+  origin: 'right', 
+  duration: 2000 
+});
+
+sr.reveal('.foo-3', { 
+  rotate: { x: 100, y: 100, z: 0 },
+  duration: 1000
+});
+
+sr.reveal('.foo-4', { 
+  viewFactor: 0.5
+});
+
+sr.reveal('.foo-5', { 
+  duration: 200 
+});
