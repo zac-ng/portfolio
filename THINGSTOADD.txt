@@ -27,3 +27,8 @@ robot prevention
 remember git push heroku master
 heroku local
 localhost/5000
+
+https://www.justinchi.me/
+
+IDEA:
+have a cursor that has : "Username: Zachary Nguyen" with the next line being "Password: "  Those users with passwords get a new site unlocked.

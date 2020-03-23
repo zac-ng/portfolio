@@ -4,6 +4,7 @@
     --box_1: #FFFFFF;
     --box_2: #fdf2dd;
     --text: #333333;
+    --aqua: #7fffd4;
   }
   
   body{
@@ -17,13 +18,14 @@
     margin-left:15%;
     padding: 3vw;
     color: var(--text);
+    position: relative;
   }
   
   .box_1 {
     background-color: var(--box_1);
   }
   .box_2 {
-      background-color: var(--box_2);
+    background-color: var(--box_2);
   }
 
   tr td{
@@ -67,6 +69,7 @@
     margin-right: 0vw;
     font-family: 'Roboto Slab', sans-serif;
     font-size:48px;
+    color: #9370DB;
 }
 
 .font_text_subheader{
@@ -116,4 +119,97 @@
     max-width: 100%;
     width: 100%;
     object-fit: contain;
+}
+
+.center_align{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.zoom_div {
+    padding: 50px;
+    transition: transform .2s;
+}
+.zoom_div:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+  }
+
+.bottom_rect{
+    background-color: #d8bfd8;
+    height: 0.35vw;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    /*height: 0.5vw;*/
+    /*background-image: linear-gradient(to bottom, rgba(255,255,255,1), #d8bfd8)*/;
+}
+
+.rectangle_div{
+    height: 0.4vw;
+    width: 5%;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #CEE3F8;
+}
+/*#d8bfd8 for violet, #7fffd4 for aqua*/
+
+.footer{
+    margin:auto;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom:2%;
+    font-size: 12px;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.skill_button{
+    padding:3%;
+    margin: 3%;
+}
+
+.skills_div{
+    margin-top: 6%;
+    border: #CEE3F8 solid 0.25vw !important;
+    min-height: 15vw; 
+}
+
+.card .card-title {
+    font-family: 'Muli', sans-serif;
+    font-size: 2vw;
+  }
+
+.card .card-text{
+    margin-right: 0vw !important;
+    font-family: 'Habibi', serif;
+    font-size: 1vw;
+}
+
+.card{
+    min-height: 30vw;
+    width: 100% !important;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    margin-bottom: 5%;  
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.image_padding_top{ 
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.card_image{
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.width_max{
+    width: 100%
 }
