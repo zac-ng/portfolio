@@ -1,8 +1,12 @@
 /* set colors*/
 :root {
-    --box_1_color: palegoldenrod;
+    --background: #FAFAFA;
+    --box_1_color: #fffaed;
   }
   
+  body{
+      background-color: --background;
+  }
   .info_box  {
     min-height: 33vh;
     margin-bottom: 10px;
