@@ -1,7 +1,8 @@
 /* set colors*/
 :root {
     --background:  	#E8E8E8;
-    --box: #FFFFFF;
+    --box_1: #FFFFFF;
+    --box_2: #fdf2dd;
     --text: #000000;
   }
   
@@ -10,15 +11,63 @@
   }
   .info_box  {
     min-height: 33vh;
-    margin-bottom: 40px;
-    margin-right:90px;
-    margin-left:90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right:18%;
+    margin-left:18%;
     padding: 10px;
     color: var(--text);
     text-transform: uppercase;
   }
   
   .box_1 {
-    background-color: var(--box);
+    background-color: var(--box_1);
   }
-  
+  .box_2 {
+      background-color: var(--box_2);
+  }
+
+  tr td{
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 20px !important;
+  }
+
+.table {
+    border-bottom:0px !important;
+}
+.table th, .table td {
+    border: 1px !important;
+}
+.fixed-table-container {
+    border:0px !important;
+}
+
+.font_title{
+    font-family: 'Roboto Slab', serif;
+    font-size: 84px;
+}
+
+.font_header{
+    font-family: 'Muli', sans-serif;
+    font-size: 48px;
+}
+
+.font_subheader{
+    font-family: 'Muli', sans-serif;
+    font-size: 26px;
+}
+
+.font_text{
+    font-family: 'Habibi', serif;
+}
+
+.title_box{
+    min-height: 33vh;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right:18%;
+    margin-left:18%;
+    padding: 10px;
+    text-transform: uppercase;
+}
