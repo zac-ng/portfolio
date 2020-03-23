@@ -2,7 +2,7 @@
 :root {
     --background: #FAFAFA;
     --box_1_color: #fffaed;
-    --purple: #9400D3
+    --text_color: #000000;
 
   }
   
@@ -13,11 +13,11 @@
     min-height: 33vh;
     margin-bottom: 10px;
     padding: 10px;
-    color: white;
+    color: var(--text_color);
     text-transform: uppercase;
   }
   
   .box_1 {
-    background-color: var(--purple);
+    background-color: var(--box_1_color);
   }
   
