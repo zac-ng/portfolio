@@ -3,7 +3,7 @@ window.sr = ScrollReveal({ reset: true });
 
 // Custom Settings
 
-sr.reveal('.foo-2', { 
+sr.reveal('.box_1', { 
   origin: 'right', 
   duration: 2000 
 });
