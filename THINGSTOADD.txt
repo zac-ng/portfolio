@@ -22,3 +22,8 @@ make sure it's mobile friendly
 include resume, linkedin, github links etc.
 
 navbar that autoscrolls using smooth scrolling to these areas
+robot prevention
+
+remember git push heroku master
+heroku local
+localhost/5000
