@@ -1,14 +1,12 @@
 /* set colors*/
 :root {
-    --background: #FAFAFA;
-    --box_1_color: #fffaed;
-    --test: #E8E8E8;
-    --text_color: #000000;
-
+    --background:  	#F5F5F5;
+    --box: #FFFFFF;
+    --text: #000000;
   }
   
   body{
-      background-color: --background;
+      background-color: var(--background);
   }
   .info_box  {
     min-height: 33vh;
@@ -16,11 +14,11 @@
     margin-right:90px;
     margin-left:90px;
     padding: 10px;
-    color: var(--text_color);
+    color: var(--text);
     text-transform: uppercase;
   }
   
   .box_1 {
-    background-color: var(--test);
+    background-color: var(--background);
   }
   
