@@ -1,0 +1,24 @@
+skills and proficiencies
+beginner - russian spanish tensorflow, unreal engine, reactjs
+intermediate - c++, c, c#, android studio, flutter/dart
+advanced - python3, javascript, nodejs
+
+projects:
+
+noteshare
+travelapp
+farming game
+othello
+railroad
+cryptogram
+boggle
+mpi draw circles
+
+contact me use a form
+
+also convert all px to vw
+make sure it's mobile friendly
+
+include resume, linkedin, github links etc.
+
+navbar that autoscrolls using smooth scrolling to these areas

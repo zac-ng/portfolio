@@ -2,6 +2,7 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Zachary's Porfolio Page</title>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -10,28 +11,94 @@
     </head>
     
     <body>
-        <div class = "title_box font_title ">
-            Zachary <br> Nguyen <br>
-            <div class = "font_header">
-                B.S. Computer Science, Drexel University
-            </div>
-            <div class = "font_subheader">
-                Concentration in Artificial Intelligence
+        <div class = "title_box">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class = "font_title">
+                                Zachary <br> Nguyen <br>
+                            </div>
+                            <div class = font_header>
+                                B.S. Computer Science<br>Drexel University
+                            </div>
+                            <div class = "font_subheader">
+                                Concentration in Artificial Intelligence
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <img src="images/profile.jpeg" class ="img-responsive profile_picture" alt="Profile Picture">
+                        </div>
+                    </div>
             </div>
         </div>
         <div class="border info_box box_1 shadow rounded">
-            About Me:
-                I am a student at Drexel University, studying in computer science. 
-        </div>
-        <div class="info_box box_1 shadow rounded">
-            Interests include:
-            Machine Learning
-            Data Science
-            Website development
-            Mobile development
+            <div class = "container">
+                    <div class = "row">
+                        <div class = "font_text_header">
+                                About Me
+                        </div>
+                    </div>
+                        <div class = "row">
+                            <div class="col-lg-8">
+                                <div class = "font_text">
+                                        I am a student at Drexel University studying computer science.  I am pursuing a concentration in Artificial Intelligence.  My interests include
+                                        machine learning, data science, and web/mobile development.
+                                </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/neuralnet.jpg" class ="img-responsive body_image" alt="Neural Net">
+                        </div>
+                    </div>
+                </div>  
         </div>
         
+        <div class="border info_box box_1 shadow rounded">
+            <div class = "container">
+                    <div class = "row">
+                        <div class = "font_text_header">
+                            Work Experience<br>
+                        </div>
+                    </div>
+                    <div class = "row">
+                            <div class = "font_text_subheader">
+                                Intervizum (June 2019 - September 2019)
+                            </div>
+                    </div>
+                    <div class = "row">
+                            <div class="col-lg-8">
+                                <div class = "font_text">
+                                        As a intern with intervizum, I used powerBI to preform complex data visualizations on large data sets.
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="images/powerbi.png" class ="img-responsive work_imarge" alt="Power Bi" style = "max-height:8vw">
+                            </div>
+                    </div>
+                    <div class = "row">
+                            <div class = "font_text_subheader">
+                                Drexel EMS (October 2019 - Present)
+                            </div>
+                    </div>
+                    <div class = "row row_image">
+                        <div class="col-lg-8">
+                            <div class = "font_text">
+                                    As part of Drexel EMS, I work as an EMT and provide emergency services to students on Drexel's campus and other residents within
+                                    Philidelphia.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/drexelems.jpeg" class ="img-responsive work_image " alt="Drexel EMS" style = "max-height:8vw">
+                        </div>
+                    </div>
+                </div>  
+        </div>
+    
         <div class="info_box box_1 shadow rounded">
+            I am proficient in the following languages and frameworks 2+
+            Experience 2+
+        </div>
+
+        <div class="border info_box box_1 shadow rounded">
             Here is are some projects I worked on!
             <table class="table borderless">
                 <tr class="borderless">
@@ -81,17 +148,8 @@
             </table>
         </div>
 
-        <div class="info_box box_2 shadow rounded">
-            Work Experience
-        </div>
-
         <div class="info_box box_1 shadow rounded">
-            I am proficient in the following languages and frameworks 2+
-            Experience 2+
-        </div>
-
-        <div class="info_box box_1 shadow rounded">
-            Contact Me
+                Contact Me
         </div>
 
         <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
