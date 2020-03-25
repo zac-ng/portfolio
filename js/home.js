@@ -5,7 +5,7 @@ window.sr = ScrollReveal({ reset: true });
 
 sr.reveal('.box_1', { 
   origin: 'right', 
-  duration: 2000 
+  duration: 2250 
 });
 
 function sendEmail(){
