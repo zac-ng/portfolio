@@ -60,7 +60,7 @@
 .font_subheader{
     margin-top: 15px;
     font-family: 'Muli', sans-serif;
-    font-size: 26px;
+    font-size: 1.5vw;
 }
 
 .font_text_header{
@@ -204,12 +204,53 @@
     margin-top: 10%;
     margin-bottom: 5%;
 }
+
+.card {
+    border: #CEE3F8 solid 0.25vw !important;
+}
 .card_image{
     max-width: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: contain;font_header
 }
 
 .width_max{
     width: 100%
 }
+
+.padding_bottom{
+    margin-bottom:5%
+}
+
+input{
+    box-shadow: none;
+    outline: none;
+    border: 2px solid black;
+}
+input:focus:required:invalid {border: 0.15vw solid red;}
+
+textarea{
+    box-shadow: none;
+    outline: none;
+    border: 4px solid #d8bfd8;
+}
+
+textarea:focus:required:invalid {border: 0.15vw solid red;}
+
+.img_link{
+    max-width: 25%;
+    max-height: 25%;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.btn_resume{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    min-width: 75%;
+    border: none;
+    background-color: #9370DB; 
+}   
