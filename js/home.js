@@ -1,35 +1,13 @@
-// Init ScrollMagic
-var ctrl = new ScrollMagic.Controller({
-  globalSceneOptions: {
-    triggerHook: 'onLeave'
-  }
+// GENERAL SETTING
+window.sr = ScrollReveal({ reset: true });
+
+// Custom Settings
+
+sr.reveal('.box_1', { 
+  origin: 'right', 
+  duration: 2000 
 });
 
-// Create scene
-$("section").each(function() {
-
-  var name = $(this).attr('id');
+function sendEmail(){
   
-  new ScrollMagic.Scene({
-    triggerElement: this
-  })
-  .setPin(this)
-  .addIndicators({
-    colorStart: "rgba(255,255,255,0.5)",
-    colorEnd: "rgba(255,255,255,0.5)", 
-    colorTrigger : "rgba(255,255,255,1)",
-    name:name
-	})
-  .loglevel(3)
-  .addTo(ctrl);
- 
-});
-
-// Get window height
-var wh = window.innerHeight;
- 
-new ScrollMagic.Scene({
-  offset: wh*3
-})
-.setClassToggle("section#four", "is-active")
-.addTo(ctrl);
+}

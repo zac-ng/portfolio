@@ -1,28 +1,8 @@
-skills and proficiencies
-beginner - russian spanish tensorflow, unreal engine, reactjs
-intermediate - c++, c, c#, android studio, flutter/dart
-advanced - python3, javascript, nodejs
-
-projects:
-
-noteshare
-travelapp
-farming game
-othello
-railroad
-cryptogram
-boggle
-mpi draw circles
-
-contact me use a form
-
-also convert all px to vw
 make sure it's mobile friendly
-
-include resume, linkedin, github links etc.
 
 navbar that autoscrolls using smooth scrolling to these areas
 robot prevention
+nodemailer to send emails, email is in codebox
 
 remember git push heroku master
 heroku local
@@ -32,3 +12,4 @@ https://www.justinchi.me/
 
 IDEA:
 have a cursor that has : "Username: Zachary Nguyen" with the next line being "Password: "  Those users with passwords get a new site unlocked.
+Default can be zachary nguyen, logged in also allows admin

@@ -1,44 +1,293 @@
 <!DOCTYPE html>
-<html lang="en" >
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js'></script>
-    <script type="text/javascript" src="js/home.js"></script>
-  <link rel="stylesheet" href="css/home.css">
-
-  </head>
-  <body>
-
-    <section id="one">
-      <div class=“inner”>
-        <h1>Hello Tutorial</h1>
-        <p>Learn how to <strong>pin elements</strong>.</p>
-      </div>
-    </section>
-
-    <section id="two">
-      <div class=“inner”>
-        <h1>ScrollMagic Tutorial</h1>
-        <p>Learn how to create a <strong>ScrollMagic scene</strong>.</p>
-      </div>
-    </section>
-
-    <section id="three">
-      <div class=“inner”>
-        <h1>ScrollMagic Tutorial</h1>
-        <p>Learn how to customize debug <strong>indicators</strong>.</p>
-      </div>
-    </section>
-
-    <section id="four">
-      <div class=“inner”>
-        <h1>ScrollMagic Tutorial</h1>
-        <p>Learn how to toggle classes using <strong>setClassToggle</strong>.</p>
-      </div>
-    </section>
-
-  </body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Habibi|Muli|Roboto+Slab&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/home.css">
+    </head>
+    
+    <body>
+        <div class = "title_box">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class = "font_title">
+                                Zachary <br> Nguyen <br>
+                            </div>
+                            <div class = font_header>
+                                B.S. Computer Science<br>Drexel University
+                            </div>
+                            <div class = "font_subheader text-muted">
+                                Concentration in Artificial Intelligence
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <img src="images/profile.jpeg" class ="img-responsive profile_picture" alt="Profile Picture">
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div class="border info_box box_1 shadow rounded">
+            <div class = "container">
+                <div class = "row">
+                    <div class = "font_text_header">
+                            About Me<br>
+                    </div>
+                </div>
+                    <div class = "row">
+                        <div class="col-md-4">
+                            <br><img src="images/neuralnet.jpg" class ="img-responsive work_image" alt="Neural Net">
+                        </div>
+                    <div class="col-lg-8">
+                        <div class = "font_text">
+                                I am a student at Drexel University studying computer science.  I am pursuing a concentration in Artificial Intelligence.  My interests include
+                                machine learning, data science, and web/mobile development.  Download my resume  <a href="files/resume.docx">here</a>.                              
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="bottom_rect"></div> 
+        </div>
+        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div class="border info_box box_1 shadow rounded">
+            <div class = "container">
+                    <div class = "row">
+                        <div class = "font_text_header">
+                            Work Experience<br>
+                        </div>
+                    </div>
+                    <div class = "row">
+                            <div class = "font_text_subheader">
+                                Intervizum (June 2019 - September 2019)
+                            </div>
+                    </div>
+                    <div class = "row">
+                            <div class="col-lg-8">
+                                <div class = "font_text">
+                                        As a intern with intervizum, I used powerBI to preform complex data visualizations on large data sets.
+                                </div>
+                            </div>
+                            <div class = "col-md-1"></div>
+                            <div class="col-md-3">
+                                <img src="images/powerbi.png" class ="img-responsive work_imarge" alt="Power Bi" style = "max-height:8vw">
+                            </div>
+                    </div>
+                    <div class = "row">
+                            <div class = "font_text_subheader">
+                                Drexel EMS (October 2019 - Present)
+                            </div>
+                    </div>
+                    <div class = "row row_image">
+                        <div class="col-lg-8">
+                            <div class = "font_text">
+                                    As part of Drexel EMS, I work as an EMT and provide emergency services to students on Drexel's campus and other residents within
+                                    Philidelphia.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="images/drexelems.jpeg" class ="img-responsive work_image " alt="Drexel EMS" style = "max-height:8vw">
+                        </div>
+                    </div>
+                </div>  
+                <div class="bottom_rect"></div>
+        </div>
+        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div class="info_box box_1 border shadow rounded">
+            <div class = "row">
+                    <div class = "font_text_header" >
+                        Skills
+                    </div>
+            </div>
+            <div class = "row">
+                    <div class="col-md-4 font_subheader center_align">
+                            Beginner ( ≤ 1 Year )
+                    </div>
+                    <div class="col-md-4 font_subheader center_align">
+                            Intermediate ( 2+ Years )
+                    </div>
+                    <div class="col-md-4 font_subheader center_align">
+                            Advanced ( 3+ Years )
+                    </div>
+            </div>
+            <div class = "row">
+                    <div class="col-md-4 font_subheader center_align">
+                            <div class = "zoom_div shadow rounded border fluid-container skills_div">
+                                <button type="button" class="btn btn-outline-dark skill_button">ReactJS</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">Unreal Engine</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">Tensorflow</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">Russian</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">Spanish</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">Dart</button>
+                            </div>
+                    </div>
+                    <div class="col-md-4 font_subheader center_align">
+                            <div class = "zoom_div shadow rounded border fluid-container skills_div">
+                                <button type="button" class="btn btn-outline-dark skill_button">C++</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">C</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">C#</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">Flutter</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">Android Studio</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">Bootstrap</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">CSS</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">MySQL</button>
+                                <button type="button" class="btn btn-outline-dark skill_button">Arduino</button>
+                            </div>
+                    </div>
+                    <div class="col-md-4 font_subheader center_align">
+                        <div class = "zoom_div shadow rounded border fluid-container skills_div">
+                            <button type="button" class="btn btn-outline-dark skill_button">Python3</button>
+                            <button type="button" class="btn btn-outline-dark skill_button">Java</button>
+                            <button type="button" class="btn btn-outline-dark skill_button">Javascript</button>
+                            <button type="button" class="btn btn-outline-dark skill_button">Node.js</button>
+                            
+                        </div>
+                    </div>
+            </div>
+            <div class="bottom_rect"></div>
+        </div>
+        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div class="border info_box box_1 border shadow rounded">
+            <div class = "font_text_header" >
+                Highlighted Projects
+            </div>
+            <div class = "container">
+                <div class = "row">
+                        <div class="col-md-4 font_subheader center_align">
+                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                                    <img src="images/noteshare.png" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Noteshare logo" style = "max-height:8vw">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Noteshare</h5>
+                                        <p class="card-text">Noteshare is Node.js application built that allows students and teachers to remotely upload and share notes with other students.</p>
+                                        <a href="https://2019znguyen_seniorproject.sites.tjhsst.edu/" class="btn btn-primary">Visit</a>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="col-md-4 font_subheader center_align">
+                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                                    <img src="images/mapbox.png" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Mapbox example" style = "max-height:8vw">
+                                    <div class="card-body">
+                                        <h5 class="card-title">VirtualTour</h5>
+                                        <p class="card-text">VirtualTour is Flutter mobile application that allows users to take virtual tours.  Work in progress.</p>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="col-md-4 font_subheader center_align">
+                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                                    <img src="images/unrealengine.png" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Unreal" style = "max-height:8vw">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Evergreen Island</h5>
+                                        <p class="card-text">Evergreen Island is a open world, farming simulation game built in Unreal Engine.  Work in progress.</p>
+                                    </div>
+                                </div>
+                        </div> 
+                </div>
+                <div class = "row">
+                        <div class="col-md-4 font_subheader center_align">
+                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                                    <img src="images/drexelems.jpeg" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ray Tracing</h5>
+                                        <p class="card-text">This was a ray tracing program built in C++ and openMPI in my Parallel Computing Class.</p>
+                                        <a href="" class="btn btn-primary">Github</a>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="col-md-4 font_subheader center_align">
+                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                                    <img src="images/drexelems.jpeg" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Othello</h5>
+                                        <p class="card-text">This is an othello bot I built in Python3 for my Artificial Intelligence Class.</p>
+                                        <a href="https://2019znguyen_seniorproject.sites.tjhsst.edu/" class="btn btn-primary">Github</a>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="col-md-4 font_subheader center_align">
+                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                                    <img src="images/drexelems.jpeg" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Railroad</h5>
+                                        <p class="card-text">This is a visualization of A* to find the shortest distance between railroads in the United States.</p>
+                                        <a href="" class="btn btn-primary">Github</a>
+                                    </div>
+                                </div>
+                        </div> 
+                </div>
+                <div class = "row">
+                        <div class="col-md-2 font_subheader center_align"></div>
+                        <div class="col-md-4 font_subheader center_align">
+                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                                    <img src="images/drexelems.jpeg" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cryptogram</h5>
+                                        <p class="card-text">This program atttempts to return the unencrypted message given an encrypted string.</p>
+                                        <a href="" class="btn btn-primary">Github</a>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="col-md-4 font_subheader center_align">
+                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                                    <img src="images/drexelems.jpeg" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Boggle Solver</h5>
+                                        <p class="card-text">This program returns all possible combinations for the game boggle given a game state.</p>
+                                        <a href="https://2019znguyen_seniorproject.sites.tjhsst.edu/" class="btn btn-primary">Github</a>
+                                    </div>
+                                </div>
+                        </div> 
+                        <div class="col-md-2 font_subheader center_align"></div>
+                </div>
+            </div>
+        </div>
+        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div class="info_box box_1 shadow rounded">
+            <div class = "font_text_header" >
+                    Contact Me
+            </div>
+            <div class = "font_text text-muted padding_bottom">
+                Want to get in touch with me?  Send me a message through my site, or contact me through my social media platforms listed on the right!
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <form>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="John Smith" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="johnsmith@gmail.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea class="message_box form-control" rows="12" id="message" placeholder="Enter message" required></textarea>
+                            </div>
+                            <button class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <a target="_blank" href="https://github.com/z-ng"><img src="images/github.png" class ="img-responsive img_link" alt="Github"></a>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <a target="_blank" href="https://www.linkedin.com/zac-ng"><img src="images/linkedin.webp" class ="img-responsive img_link" alt="Linkedin"></a>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="bottom_rect"></div>
+        </div>
+        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div class = "footer">Made by Zachary Nguyen © 2020</div>
+        <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
+    </body>
+    
 </html>
