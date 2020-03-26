@@ -10,30 +10,41 @@ sr.reveal('.box_1', {
 
 function sendEmail()
 {
-  console.log("HELLO")
-  form_data = document.getElementById('message_form');
-  myForm = new FormData(form_data);
-  console.log("AJAX SENT")
-  $.ajax({
-          url: "send_email",
-          type: "get",                         
-          enctype: 'multipart/form-data',
-          processData: false, 
-          contentType: false,            
-          data: myForm,
-          success: function(response) {
-              if(response == "1")
+      var form = $('#message_form').serializeArray();
+      if( form[0].value.length == 0 || form[1].value.length == 0 || form[2].value.length == 0)
+      {
+        swal(
+          'Error!',
+          '<b style="color:red;">Please fill in all fields!</b>',
+          'error'
+        )
+      }
+      else
+      {
+          $.ajax({
+            url: "send_email",
+            type: "get",
+            data:  $('#message_form').serialize(),
+            success: function(response) {
+              
+              if(response == 1)
               {
-                  alert("There has been an error sending your message.  Please check that all entered information is correct!")
+                alert("There was an error sending your message, please check that all your information is accurate and valid!")
               }
-              else
+              
+              else if(response == 0)
               {
-                  alert("Message successfully sent!  I will get back to you as soon as possible.")
+                  swal(
+                    'Message Sent!',
+                    '<b style="color:green;">I will get back to you as soon as I can!</b>',
+                    'success'
+                  )
+                  document.getElementById("message_form").reset(); 
               }
           },
           error: function (stat, err) {
-            alert("There has been an error sending your message.  Please check that all entered information is correct!")
-          }       
-  });
-
+              alert("There was an error sending your email, please check that all your information is accurate and valid!")
+          }    
+        });
+      }
 }

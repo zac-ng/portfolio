@@ -3,6 +3,7 @@ var app = express();
 var path = require('path');
 var http = require('http').Server(app);
 var nodemailer = require('nodemailer');
+var bodyParser = require('body-parser')
 
 // -------------- serve static folders -------------- //
 
@@ -23,11 +24,12 @@ app.get('/test', function(req,res) {
 
 app.get('/send_email' , function(req, res){
     
-    console.log("SERVER CALLED")
-    const name = req.query.name
-    const email = req.query.email
-    const message = req.query.message 
-    const no_extension = req.query.name
+    const name = req.query.name.toString()
+    const email = req.query.email.toString()
+    const message = req.query.message.toString()
+    console.log(name)
+    console.log(email)
+    console.log(message)
 
     var transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -40,12 +42,13 @@ app.get('/send_email' , function(req, res){
     var mailOptions = {
         from: 'portfolioemail5783@gmail.com',
         to: 'zncodebox@gmail.com',
-        subject: 'Portfolio Website Message' + 'from' + name + 'at' + email,
-        text: message
+        subject: 'HELLO',
+        text: 'hello'
     };
 
     transporter.sendMail(mailOptions, function(error, info){
         if (error) {
+            console.log(error)
             res.send("1")
         } else {
             res.send("0")

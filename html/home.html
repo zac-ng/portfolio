@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Habibi|Muli|Roboto+Slab&display=swap" rel="stylesheet"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+          <!-- SweetAlert2 -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
         <link rel="stylesheet" href="css/home.css">
     </head>
     
@@ -259,15 +262,15 @@
                         <form id = "message_form">
                             <div class="form-group">
                                 <label>Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="John Smith" required>
+                                <input type="text" class="form-control" name="name" placeholder="John Smith" required>
                             </div>
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="johnsmith@gmail.com" required>
+                                <input type="email" class="form-control" name="email" placeholder="johnsmith@gmail.com" required>
                             </div>
                             <div class="form-group">
                                 <label>Message</label>
-                                <textarea class="message_box form-control" rows="12" id="message" placeholder="Enter message" required></textarea>
+                                <textarea class="message_box form-control" rows="12" name="message" placeholder="Enter message" required></textarea>
                             </div>
                         </form>
                         <button onclick=sendEmail() class="btn btn-primary">Send</button>
