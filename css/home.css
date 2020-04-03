@@ -101,9 +101,9 @@ tr td{
 
 .profile_picture{
   margin-top: 5.208333333333333vw;
-  margin-bottom: 0.5208333333333334vw;
-  max-width: 100%;
-  width: 100%;
+  margin-bottom: 0.2208333333333334vw;
+  max-height: 65%;
+  width: 90%;
   object-fit: cover;
 }
 
