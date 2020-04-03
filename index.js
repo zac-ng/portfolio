@@ -24,11 +24,11 @@ app.get('/test', function(req,res) {
 
 app.get('/send_email' , function(req, res){
     
-    const name = req.query.name.toString()
-    const email = req.query.email.toString()
-    const message = req.query.message.toString()
-    console.log(name)
-    console.log(email)
+    const name = req.query.name.toString();
+    const email = req.query.email.toString();
+    const message = req.query.message.toString();
+    emailSubject = "Portfolio site: email from " + name + " at " + email;
+    console.log(emailSubject)
     console.log(message)
 
     var transporter = nodemailer.createTransport({
@@ -42,8 +42,8 @@ app.get('/send_email' , function(req, res){
     var mailOptions = {
         from: 'portfolioemail5783@gmail.com',
         to: 'zncodebox@gmail.com',
-        subject: 'HELLO',
-        text: 'hello'
+        subject: emailSubject,
+        text: message
     };
 
     transporter.sendMail(mailOptions, function(error, info){
