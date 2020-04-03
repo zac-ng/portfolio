@@ -18,10 +18,6 @@ app.get('/', function(req,res) {
     res.sendFile(__dirname + "/html/home.html");
 })
 
-app.get('/test', function(req,res) {
-    res.sendFile(__dirname + "/html/test.html");
-})
-
 app.get('/send_email' , function(req, res){
     
     const name = req.query.name.toString();
@@ -34,14 +30,14 @@ app.get('/send_email' , function(req, res){
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'portfolioemail5783@gmail.com',
-            pass: 'nodemailer'
+            user: '~',
+            pass: '~'
         }
     });
 
     var mailOptions = {
-        from: 'portfolioemail5783@gmail.com',
-        to: 'zncodebox@gmail.com',
+        from: '~',
+        to: '~',
         subject: emailSubject,
         text: message
     };
