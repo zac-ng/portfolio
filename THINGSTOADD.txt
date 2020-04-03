@@ -1,12 +1,12 @@
 make sure it's mobile friendly
 
-navbar that autoscrolls using smooth scrolling to these areas
 robot prevention
-nodemailer to send emails, email is in codebox
 
 remember git push heroku master
 heroku local
 localhost/5000
+
+add custom domain
 
 https://www.justinchi.me/
 
