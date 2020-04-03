@@ -4,5 +4,4 @@ Hello!  This contains the code for my personal website.  This website was built 
 
 I have attached preview of my website below:
 
-![Example](https://raw.githubusercontent.com/z-ng/portfolio/main/example.gif)
-
+![Example](https://raw.githubusercontent.com/zac-ng/portfolio/main/example.gif)
