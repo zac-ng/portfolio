@@ -322,3 +322,17 @@ textarea:focus:required:invalid {border: 0.15vw solid red;}
 		 overflow: auto;
 	}
  }
+
+ .send_button{
+   width: 65%
+ }
+
+ .custom_button{
+  background-color:	#313639; 
+  border-color:#1c1919;
+  color: #FFFFFF;
+ }
+
+ .custom_button:hover{
+  background-color: #1c1919;
+ }
