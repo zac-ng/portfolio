@@ -15,7 +15,24 @@
     </head>
     
     <body>
-        <div class = "title_box">
+        <div class="container moving">
+            <div class="row">
+              <div class="col-md-2"><!--nav bar spacing--></div>
+              <div class="col-md-8">
+                    <nav class="nav">
+                      <a href="#" id = "home" class="nav-item is-active" active-color="orange">Home</a>
+                      <a href="#" id = "about" class="nav-item" active-color="green">About Me</a>
+                      <a href="#" id = "experience" class="nav-item" active-color="blue">Experience</a>
+                      <a href="#" id = "skills" class="nav-item" active-color="red">Skills</a>
+                      <a href="#" id = "projects" class="nav-item" active-color="#000080">Projects</a>
+                      <a href="#" id = "contact" class="nav-item" active-color="rebeccapurple">Contact Me</a>
+                      <span class="nav-indicator"></span>
+                    </nav>
+              </div>
+              <div class="col-md-2"><!--nav bar spacing--></div>
+            </div>
+        </div>
+        <div id = "home_box" class = "title_box">
             <div class="container">
                     <div class="row">
                         <div class="col-sm">
@@ -35,7 +52,7 @@
                     </div>
             </div>
         </div>
-        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div id = "about_box" class = "rectangle_div border shadow rounded box_1"></div>
         <div class="border info_box box_1 shadow rounded">
             <div class = "container">
                 <div class = "row">
@@ -57,7 +74,7 @@
             </div> 
             <div class="bottom_rect"></div> 
         </div>
-        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div id = "experience_box" class = "rectangle_div border shadow rounded box_1"></div>
         <div class="border info_box box_1 shadow rounded">
             <div class = "container">
                     <div class = "row">
@@ -100,7 +117,7 @@
                 </div>  
                 <div class="bottom_rect"></div>
         </div>
-        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div id = "skills_box" class = "rectangle_div border shadow rounded box_1"></div>
         <div class="info_box box_1 border shadow rounded">
             <div class = "row">
                     <div class = "font_text_header" >
@@ -154,92 +171,70 @@
             </div>
             <div class="bottom_rect"></div>
         </div>
-        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div id = "projects_box" class = "rectangle_div border shadow rounded box_1"></div>
         <div class="border info_box box_1 border shadow rounded">
             <div class = "font_text_header" >
                 Highlighted Projects
             </div>
             <div class = "container">
                 <div class = "row">
-                        <div class="col-md-4 font_subheader center_align">
-                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
-                                    <img src="images/noteshare.png" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Noteshare logo" style = "max-height:8vw">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Noteshare</h5>
-                                        <p class="card-text">Noteshare is Node.js application built that allows students and teachers to remotely upload and share notes with other students.</p>
-                                        <a href="https://2019znguyen_seniorproject.sites.tjhsst.edu/" class="btn btn-primary">Visit</a>
-                                    </div>
-                                </div>
-                        </div> 
-                        <div class="col-md-4 font_subheader center_align">
-                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
-                                    <img src="images/mapbox.png" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Mapbox example" style = "max-height:8vw">
-                                    <div class="card-body">
-                                        <h5 class="card-title">VirtualTour</h5>
-                                        <p class="card-text">VirtualTour is Flutter mobile application that allows users to take virtual tours.  Work in progress.</p>
-                                    </div>
-                                </div>
-                        </div> 
-                </div>
-                <div class = "row">
-                        <div class="col-md-4 font_subheader center_align">
-                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
-                                    <img src="images/drexelems.jpeg" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Ray Tracing</h5>
-                                        <p class="card-text">Custom ray tracing program that simulates realistic shadows and light using light intensity calculations through Lambert's Law.</p>
-                                        <a href="https://github.com/z-ng/Parallel_Computing/tree/main/ray_tracing" class="btn btn-primary">Github</a>
-                                    </div>
-                                </div>
-                        </div> 
-                        <div class="col-md-4 font_subheader center_align">
-                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
-                                    <img src="images/drexelems.jpeg" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Othello</h5>
-                                        <p class="card-text">An Othello playing program that leverages heuristics, alpha beta pruning, and negabax to optimize movechoices in a given board.</p>
-                                        <a href="https://2019znguyen_seniorproject.sites.tjhsst.edu/" class="btn btn-primary">Github</a>
-                                    </div>
-                                </div>
-                        </div> 
-                        <div class="col-md-4 font_subheader center_align">
-                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
-                                    <img src="images/drexelems.jpeg" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Railroad</h5>
-                                        <p class="card-text">This is a visualization of A* to find the shortest distance between railroads in the United States.</p>
-                                        <a href="" class="btn btn-primary">Github</a>
-                                    </div>
-                                </div>
-                        </div> 
+                    <div class="col-md-4 font_subheader center_align">
+                        <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                            <img src="images/noteshare.png" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Noteshare logo" style = "max-height:8vw">
+                            <div class="card-body">
+                                <h5 class="card-title">Noteshare</h5>
+                                <p class="card-text">Noteshare is Node.js application built that allows students and teachers to remotely upload and share notes with other students.</p>
+                                <a target="_blank" href="https://2019znguyen_seniorproject.sites.tjhsst.edu/" class="btn btn-primary">Visit</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-4 font_subheader center_align">
+                        <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                            <img src="images/raytrace.png" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
+                            <div class="card-body">
+                                <h5 class="card-title">Ray Tracing</h5>
+                                <p class="card-text">Ray tracing simulation incorporating realistic shadows and light using light intensity calculations using Lambert's Law.</p>
+                                <a target="_blank" href="https://github.com/z-ng/Parallel_Computing/tree/main/ray_tracing" class="btn btn-primary">Github</a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-4 font_subheader center_align">
+                        <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                            <img src="images/othello.png" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
+                            <div class="card-body">
+                                <h5 class="card-title">Othello</h5>
+                                <p class="card-text">An Othello playing program that leverages heuristics, alpha beta pruning, and negamax to optimize moves.</p>
+                                <a target="_blank" href="https://github.com/z-ng/Artificial_Intelligence/tree/main/Othello" class="btn btn-primary">Github</a>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
                 <div class = "row">
                         <div class="col-md-2 font_subheader center_align"></div>
                         <div class="col-md-4 font_subheader center_align">
                                 <div class="card border shadow rounded zoom_div" style="width: 100%;">
-                                    <img src="images/drexelems.jpeg" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
+                                    <img src="images/portfolio.png" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
                                     <div class="card-body">
-                                        <h5 class="card-title">Cryptogram</h5>
-                                        <p class="card-text">This program atttempts to return the unencrypted message given an encrypted string.</p>
-                                        <a href="" class="btn btn-primary">Github</a>
+                                        <h5 class="card-title">Portfolio Site</h5>
+                                        <p class="card-text">This portofolio site!  Built using node.js and bootstrap.</p>
+                                        <a target="_blank" href="" class="btn btn-primary">Github</a>
                                     </div>
                                 </div>
                         </div> 
                         <div class="col-md-4 font_subheader center_align">
-                                <div class="card border shadow rounded zoom_div" style="width: 100%;">
-                                    <img src="images/drexelems.jpeg" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Drexel EMS" style = "max-height:8vw">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Boggle Solver</h5>
-                                        <p class="card-text">This program returns all possible combinations for the game boggle given a game state.</p>
-                                        <a href="https://2019znguyen_seniorproject.sites.tjhsst.edu/" class="btn btn-primary">Github</a>
-                                    </div>
+                            <div class="card border shadow rounded zoom_div" style="width: 100%;">
+                                <img src="images/mapbox.png" class =" card-img-top rounded img-responsive card_image image_padding_top " alt="Mapbox example" style = "max-height:8vw">
+                                <div class="card-body">
+                                    <h5 class="card-title">VirtualTour</h5>
+                                    <p class="card-text">VirtualTour is Flutter mobile application that allows users to take virtual tours.  Work in progress.</p>
                                 </div>
+                            </div>
                         </div> 
                         <div class="col-md-2 font_subheader center_align"></div>
                 </div>
             </div>
         </div>
-        <div class = "rectangle_div border shadow rounded box_1"></div>
+        <div id = "contact_box" class = "rectangle_div border shadow rounded box_1"></div>
         <div class="info_box box_1 shadow rounded">
             <div class = "font_text_header" >
                     Contact Me
