@@ -63,6 +63,11 @@ tr td{
   font-size: 1.5vw;
 }
 
+.font_concentration{
+  font-size: 1.4vw;
+  margin-top: 0.78125vw;
+}
+
 .font_text_header{
   margin-top: 1vw;
   margin-left: 2vw;
@@ -101,7 +106,6 @@ tr td{
 
 .profile_picture{
   margin-top: 5.208333333333333vw;
-  margin-bottom: 0.2208333333333334vw;
   max-height: 65%;
   width: 90%;
   object-fit: cover;
@@ -189,7 +193,7 @@ tr td{
 }
 
 .card{
-  min-height: 30vw;
+  min-height: 33vw;
   width: 100% !important;
   margin-left: 10%;
   margin-right: 10%;
